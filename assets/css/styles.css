@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, ul, li, p, h1 {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+body.dark-mode {
+	background-color: #000401;
+	color: #e5e8e8;
+}
+
+.li-dark-mode{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-weight: lighter;
+    cursor: default;
+}
+
+.header {
+    display: flex;
+    background-color: #4e545c;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+footer {
+	width: 100%;
+	background-color: #4e545c;
+	padding: 16px;
+	color: #e5e8e8;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+footer.dark-mode {
+	background-color: #8d9797;
+	color: #000401;
+}
+
+button {
+	border-radius: 40px;
+	font-size: 0.8rem;
+	height: 25px;
+	width: 50px;
+	border: none;
+	background-color: #3d4248;
+	color: #e5e8e8;
+	transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+button:hover {
+	background-color: #000401;
+}
+
+button.dark-mode {
+	background-color: #e5e8e8;
+	color: #3d4248;
+}
+
+button.dark-mode:hover {
+	background-color: #3d4248;
+	color: #e5e8e8;
+}
+
+/* REMOVER DEPOIS */
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width:510px) {
+    .header {
+        display: none;
+    }
+    
+    @media screen and (max-width:480px) {
+        html {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        body, ul, li, p {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            font-size: 1.2rem;
+        }
+        
+        #li-dark-mode{
+            color: white;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .header {
+            display: none;
+            background-color: #4e545c;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .menu {
+            display: flex;
+        }
+        
+        .menu li {
+            margin-left: 20px;
+        }    
+    }
+}
