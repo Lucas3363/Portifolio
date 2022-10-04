@@ -145,3 +145,16 @@ p {
         }    
     }
 }
+
+/* 
+section {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+} */
+
+section .class-one{
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+}
